@@ -2,8 +2,8 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Eagle extends Animal implements Flyable, Goable{
-    public Eagle(String name, LocalDate bithDate, List<String> vaccinations, String illness, String owner) {
-        super(name, bithDate, vaccinations, illness, owner);
+    public Eagle(String name, LocalDate bithDate, List<String> vaccinations, String illness,int temperature, String owner) {
+        super(name, bithDate, vaccinations, illness, temperature, owner);
     }
 
     @Override

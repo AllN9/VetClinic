@@ -2,8 +2,8 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Fish extends Animal implements Swimable {
-    public Fish(String name, LocalDate bithDate, List<String> vaccinations, String illness, String owner) {
-        super(name, bithDate, vaccinations, illness, owner);
+    public Fish(String name, LocalDate bithDate, List<String> vaccinations, String illness,int temperature, String owner) {
+        super(name, bithDate, vaccinations, illness,temperature, owner);
     }
 
     @Override

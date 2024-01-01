@@ -2,8 +2,8 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Duck extends Animal implements Swimable, Flyable, Goable{
-    public Duck(String name, LocalDate bithDate, List<String> vaccinations, String illness, String owner) {
-        super(name, bithDate, vaccinations, illness, owner);
+    public Duck(String name, LocalDate bithDate, List<String> vaccinations, String illness,int temperature, String owner) {
+        super(name, bithDate, vaccinations, illness, temperature, owner);
     }
 
     @Override

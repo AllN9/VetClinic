@@ -5,8 +5,8 @@ public class Cat extends Animal implements Swimable, Goable{
 
     private int legsCount;
 
-    public Cat(String name, LocalDate bithDate, List<String> vaccinations, String illness, String owner, int legsCount) {
-        super(name, bithDate, vaccinations, illness, owner);
+    public Cat(String name, LocalDate bithDate, List<String> vaccinations, String illness, int temperature , String owner, int legsCount) {
+        super(name, bithDate, vaccinations, illness,temperature , owner);
         this.legsCount = legsCount;
     }
 
