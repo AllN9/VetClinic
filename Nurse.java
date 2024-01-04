@@ -14,6 +14,6 @@ public class Nurse extends Staff{
         Random random = new Random();
         int temp = random.nextInt(4) + 34;
         animal.takeTemperature(temp);
-        System.out.printf("%s температура %i", animal.getname(), temp);
+        System.out.println("у " + animal.getname() + " температура " + temp + " градусов");
     }
 }
