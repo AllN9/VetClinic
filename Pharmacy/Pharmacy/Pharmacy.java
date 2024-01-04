@@ -8,10 +8,12 @@ import java.util.Collections;
 public class Pharmacy implements Iterator<Component>{
     private int index;
     private final List<Component> components;
+    private int generalPower;
 
     public Pharmacy(){
         this.index = 0;
         this.components = new ArrayList();
+        this.generalPower = 0;
     }
 
     public void addComponents(Component ... components) {
@@ -27,5 +29,13 @@ public class Pharmacy implements Iterator<Component>{
     @Override
     public Component next() {
         return components.get(index++);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Pharmacy test = (Pharmacy) o;
+        return components == test.components;
     }
 }
