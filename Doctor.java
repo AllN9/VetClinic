@@ -8,7 +8,7 @@ public class Doctor extends Staff{
     public void getIllness(Animal animal) {
         if(animal.getTemp() >= 37){
             animal.takeIllness("Covid19");
-            System.out.printf("%s заюолел ковидом", animal.getname());
+            System.out.printf("%s заболел ковидом", animal.getname());
         }
     }
 }

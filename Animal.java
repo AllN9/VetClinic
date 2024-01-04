@@ -78,6 +78,7 @@ public abstract class Animal {
                 "name ='" + name + '\'' + 
                 ", bithDate = " + bithDate + 
                 ", vaccinations = " + vaccinations + 
+                ", temperature ='" + temperature + '\'' +
                 ", illness ='" + illness + '\'' + 
                 ", owner ='" + owner + '\'' + 
                 ", type ='" + type + '\'' +

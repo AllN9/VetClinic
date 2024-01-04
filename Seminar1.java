@@ -15,13 +15,5 @@ public class Seminar1 {
 
         VetClinic clinic = new VetClinic();
         clinic.addPatients(barsik, eagle, kelvin, nemo);
-
-        System.out.println(clinic.getPatients());
-        System.out.println("-----------------------");
-        System.out.println(clinic.getGoables());
-        System.out.println("-----------------------");
-        System.out.println(clinic.getSwimable());
-        System.out.println("-----------------------");
-        System.out.println(clinic.getFlyables());
     }
 }
