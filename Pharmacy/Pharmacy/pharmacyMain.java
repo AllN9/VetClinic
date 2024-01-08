@@ -17,19 +17,23 @@ public class pharmacyMain {
         Component sugar = new Component("Sugar", "87gr", 80);
 
         Pharmacy pharmacy1 = new Pharmacy();
-        pharmacy1.addComponents(salt, piniceline);
+        pharmacy1.addComponents(salt, sugar);
         Pharmacy pharmacy2 = new Pharmacy();
         pharmacy2.addComponents(salt, piniceline);
+        Pharmacy pharmacy3 = new Pharmacy();
+        pharmacy3.addComponents(salt, sugar);
+        Pharmacy pharmacy4 = new Pharmacy();
+        pharmacy4.addComponents(salt, piniceline);
 
         //Iterator<Component> iterator = pharmacy1;
         //while (iterator.hasNext()){
         //    System.out.println(iterator.next());
         //} - выводис список компонентов
 
-        IterablePharmacy pharmacy3 = new IterablePharmacy();
-        pharmacy3.addComponents(sugar, piniceline);
+        IterablePharmacy Ipharmacy = new IterablePharmacy();
+        Ipharmacy.addComponents(sugar, piniceline);
 
-        for(Component c : pharmacy3) {
+        for(Component c : Ipharmacy) {
             System.out.println(c);
         }// - также выводис список компонентов
 
@@ -39,9 +43,25 @@ public class pharmacyMain {
 
         System.out.println("================================");
 
+        List<Pharmacy> list2 = new ArrayList<>(Arrays.asList(pharmacy1, pharmacy2));
+        Collections.sort(list2);
+        Iterator<Pharmacy> i = list2.iterator();
+        while (i.hasNext()) {
+            Iterator<Component> iterator = i.next();
+            while (iterator.hasNext()) {
+                System.out.println(iterator.next());
+            }
+            System.out.println("================================");
+        }
+
         Set<Pharmacy> result = new HashSet<>();
         result.add(pharmacy1);
         result.add(pharmacy2);
+        result.add(pharmacy3);
+        result.add(pharmacy4);
+
         System.out.println(result.size());
+
+        System.out.println("================================");
     }
 }
