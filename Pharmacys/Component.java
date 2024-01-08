@@ -1,4 +1,4 @@
-package Pharmacy;
+package Pharmacys;
 
 public class Component implements Comparable<Component>{
     private String name;

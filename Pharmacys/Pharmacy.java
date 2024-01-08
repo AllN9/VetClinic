@@ -1,4 +1,4 @@
-package Pharmacy;
+package Pharmacys;
 
 import java.util.ArrayList;
 import java.util.List;
